@@ -1,0 +1,7 @@
+@(echostr: String, msg_signature: String, timestamp: String, nonce: String)
+<xml>
+   <Encrypt><![CDATA[@echostr]]></Encrypt>
+   <MsgSignature><![CDATA[@msg_signature]]></MsgSignature>
+   <TimeStamp>@timestamp</TimeStamp>
+   <Nonce><![CDATA[@nonce]]></Nonce>
+</xml>
